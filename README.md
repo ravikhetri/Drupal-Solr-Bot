@@ -17,15 +17,13 @@ Install the required packages using pip
 
 3. Run the development server
 
-uvicorn main:app --port 8086 --reload
+    `uvicorn main:app --port 8086 --reload`
 
 4. Replace the Solr core name
 
 Ensure that you replace the Solr core name in the application as per your specific application setup.
 
-API Endpoints
-POST /search
+## API Endpoints
 
-Submit a question and receive a response from the chatbot.
-
-{"question":"Hello I want to know about the....", "langcode":"en"}
+- `POST /search`: Submit a question and receive a response from the chatbot.
+   {"question":"Hello I want to know about the....", "langcode":"en"}
